@@ -74,7 +74,7 @@ maxScoreSpan.textContent = quizQuestions.length;
 startButton.addEventListener("click", startQuiz);
 restartButton.addEventListener("click", restartQuiz);
 
-function startQuiz() {\
+function startQuiz() {
   // reset vars
   currentQuestionIndex = 0;
   score = 0;
@@ -151,6 +151,24 @@ function selectAnswer(event) {
 }
 
 function showResults() {
+  quizScreen.classList.remove("active");
+  resultScreen.classList.add("active");
+
+  finalScoreSpan.textContent = score;
+
+  const percentage = (score / quizQuestions.length) * 100;
+
+  if (percentage === 100) {
+    resultMessage.textContent = "Perfect! You're a genius!";
+  } else if (percentage >= 80) {
+    resultMessage.textContent = "Great job! You know your stuff!";
+  } else if (percentage >= 60) {
+    resultMessage.textContent = "Good effort! Keep learning!";
+  } else if (percentage >= 40) {
+    resultMessage.textContent = "Not bad! Try again to improve!";
+  } else {
+    resultMessage.textContent = "Keep studying! You'll get better!";
+  }
 }
 
 function restartQuiz() {
