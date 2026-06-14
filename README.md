@@ -132,36 +132,4 @@ To add more questions:
 
 ---
 
-## Future Improvements
 
-* Randomized question order
-* Question categories
-* Difficulty levels
-* Countdown timer
-* Sound effects
-* Local storage for high scores
-* Dark mode support
-* Question database/API integration
-* Multiplayer quiz mode
-
----
-
-## Learning Outcomes
-
-This project demonstrates understanding of:
-
-* JavaScript Functions
-* DOM Manipulation
-* Event Listeners
-* Dynamic Element Creation
-* Array Methods
-* Conditional Logic
-* State Management
-* Responsive CSS Design
-* User Experience Design Principles
-
----
-
-## License
-
-This project is open source and available under the MIT License.
